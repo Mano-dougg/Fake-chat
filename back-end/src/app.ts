@@ -1,11 +1,7 @@
-import express from 'express';
-import { router } from './routes';
+import { app } from './server'
 
-const cors = require('cors');
-const app = express();
+const PORT = 8080;
 
-app.use(express.json());
-app.use(cors());
-app.use(router);
-
-export { app, cors }
+app.listen(PORT, () => {
+    console.log(`Servidor está executando na porta ${PORT}`);
+});
