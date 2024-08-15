@@ -1,0 +1,26 @@
+.header {
+    background-color: #1B1B1B;
+    height: 101px;
+    padding: 0 8.19% 0 8.19%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px #00000040; 
+}
+
+.navbar {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.h1Header {
+    background: linear-gradient(to right, #FF5555 , #FF2121);
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+.pNavBar {
+    font-size: 24px;
+}
