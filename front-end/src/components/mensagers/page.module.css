@@ -1,0 +1,11 @@
+.mensagers{
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

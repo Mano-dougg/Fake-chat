@@ -27,6 +27,7 @@ export function TextBar({ onSubmit }: TextBarProps) {
                     onChange={(e) => setText(e.target.value)}
                 />
                 <Image
+                    className={styles.imageButton}
                     src={submitWhite}
                     width={40}
                     height={40}
