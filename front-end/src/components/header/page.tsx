@@ -4,7 +4,6 @@ import moon from "./images/moon.svg"
 
 export function Header() {
     return (
-        <>
         <header className={styles.header}>
             <div>
                 <h1 className={styles.h1Header}> FAKE CHAT </h1>
@@ -23,6 +22,5 @@ export function Header() {
                 </div>
             </nav>
         </header>
-        </>
     )
 }

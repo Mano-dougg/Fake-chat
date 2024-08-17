@@ -1,0 +1,39 @@
+
+.textBar {
+    position: fixed;
+    bottom: 33px;
+    display: flex;
+    width: 83.61%;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.textBarUpper {
+    width: 100%;
+    height: 101px;
+    border-radius: 50px;
+    background-color: rgba(255, 85, 85, 0.25);
+    display: flex;
+    align-items: center;
+    
+}
+
+.inputTextBar {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: unset;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.inputTextBar::placeholder {
+    font-size: 32px;
+    font-family: var(--montserrat);
+}
+
+.pTextBarDown {
+    font-size: 14px;
+}
