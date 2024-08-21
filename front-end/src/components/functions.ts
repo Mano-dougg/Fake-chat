@@ -15,12 +15,6 @@ class functions {
         
     }
 
-    public static async getData() {
-        const response = await axios.get('http://localhost:8080/mensagers');
-
-        return response;
-    }
-
     private static async sendBack(text: string) {
         try {
             const response = await axios({
@@ -41,6 +35,5 @@ class functions {
     }
   
 }
-
 
 export default functions;
