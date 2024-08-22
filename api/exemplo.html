@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de API</title>
+</head>
+<body>
+    <h1>Enviar Texto para Predição</h1>
+    <script>
+        const textToPredict = "globo grava vinheta de fim de ano com lula e janja.";
+        
+        fetch('http://127.0.0.1:5000/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ text: textToPredict }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Resultado:', data.result);
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
+    </script>
+</body>
+</html>
