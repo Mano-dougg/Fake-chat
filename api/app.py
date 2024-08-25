@@ -86,7 +86,7 @@ def predict_text(text, model_filename='svm_model.joblib', vectorizer_filename='t
 
 
 # Carregar o DataFrame com textos verdadeiros e seus links
-input_file_path = 'df_combined.csv'
+input_file_path = './df_combined.csv'
 df_combined_loaded = pd.read_csv(input_file_path)
 df_true = df_combined_loaded[df_combined_loaded['label'] == 'verdadeira']
 
