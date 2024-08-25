@@ -41,7 +41,7 @@ def preprocess_text(text):
     return ' '.join(trigram_str)
 
 
-def predict_text(text, model_filename='svm_model.joblib', vectorizer_filename='tfidf_vectorizer.joblib', df_true_links=None, similarity_file_path='similarities.npy', similarity_threshold=0.1):
+def predict_text(text, model_filename='./svm_model.joblib', vectorizer_filename='./tfidf_vectorizer.joblib', df_true_links=None, similarity_file_path='./similarities.npy', similarity_threshold=0.1):
     # Carregar o modelo salvo
     model = joblib.load(model_filename)
 
