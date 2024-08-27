@@ -11,9 +11,10 @@ export function Chat() {
 
     async function submit(text: string) {
 
+        setMyMensager(text)
+        
         const response = await functions.submit(text)
 
-        setMyMensager(text)
         setChatMensager(response)
     }
 

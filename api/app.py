@@ -75,18 +75,18 @@ def predict_text(text, model_filename='./svm_model.joblib', vectorizer_filename=
             # Verificar se a similaridade excede o limiar
             if most_similar_score >= similarity_threshold:
                 # Retornar o link correspondente
-                return 'falso', df_true_links['link'].iloc[most_similar_index]
+                return 'Essa Noticia é Falsa', df_true_links['link'].iloc[most_similar_index]
             else:
                 # Similaridade não é alta o suficiente
                 return 'não é possível verificar se o texto é falso'
         else:
             return 'não é possível verificar se o texto é falso'
     else:
-        return 'verdadeiro'
+        return 'Essa Noticia é Verdadeira'
 
 
 # Carregar o DataFrame com textos verdadeiros e seus links
-input_file_path = './df_combined.csv'
+input_file_path = 'df_combined.csv'
 df_combined_loaded = pd.read_csv(input_file_path)
 df_true = df_combined_loaded[df_combined_loaded['label'] == 'verdadeira']
 
